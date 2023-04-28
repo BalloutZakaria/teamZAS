@@ -15,7 +15,7 @@
         Saisir le premier nombre: <br>
      <input type="text" placeholder="saisir un nombre" size=30><br><br><br>
      Saisir le deuxiéme nombre: <br>
-     <input type="text" placeholder="saisir un nombre" size=30><br><br><br>
+     <input type="text" placeholder="saisir un nombree" size=30><br><br><br>
     </div>
 <div class="dropdown">
     <label>Choisir votre opération</label><br>
