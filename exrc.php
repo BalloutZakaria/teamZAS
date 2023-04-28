@@ -27,7 +27,7 @@
     <option value="*">*</option>
     <option value="%">%</option>
 
-</select><br><br
+</select><br><br>
 </div>
 <div class="butnzac">
     <input type="submit" class="btn btn-info" value="Calculer">
