@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:300,400,700,800|Open+Sans:300');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+    scroll-behavior: smooth;
+ 
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    align-items: center;
+}
+  body {
+  background-image: linear-gradient(
+    to right bottom,
+    #b91eda,
+    #a02ae0,
+    #8234e5,
+    #5d3be8,
+    #1241eb
+  );
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+
+  main{
+  max-width: 880px;
+  margin: 1% auto;
+  }
+
+  .card{
+  box-shadow: 0 6px 6px rgba(#000, 0.3);
+  transition: 200ms;
+  background: #fff;
+}
+  
+  .card__title{
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;}
+    
+    .card__title h3{
+      flex: 0 1 200px;
+      text-align: right;
+      margin: 0;
+      color: #252525;
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    
+     .icon{
+      flex: 1 0 10px;
+      background: #115dd8;
+      color: #fff;
+      padding: 10px 10px;
+      transition: 200ms;}
+      
+      .icon a{
+        color: #fff;
+      }
+      
+      .icon:hover{
+        background: #252525;
+      }
+  
+  .card__body{
+    padding: 0 40px;
+    display: flex;
+    flex-flow: row no-wrap;
+    margin-bottom: 25px;}
+    
+    .card__body .half{
+      box-sizing: border-box;
+      padding: 0 15px;
+      flex: 1 0 50%;
+    }
+    
+        .featured_text h1{
+        margin: 0;
+        padding: 0;
+        font-weight: 800;
+        font-family: "Montserrat", sans-serif;
+        font-size: 64px;
+        line-height: 50px;
+        color: #181e28;
+      }
+      
+      .featured_text p{
+        margin: 0;
+        padding: 0;}
+        
+        .featured_text .sub{
+          font-family: "Montserrat", sans-serif;
+          font-size: 26px;
+          text-transform: uppercase;
+          color: #686e77;
+          font-weight: 300;
+          margin-bottom: 5px;
+        }
+        
+        .featured_text .price{
+          font-family: "Fjalla One", sans-serif;
+          color: #252525;
+          font-size: 26px;
+        }
+    
+       .image{
+      padding-top: 15px;
+      width: 100%;}
+      
+       .image img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    
+    .description{
+      margin-bottom: 25px;}
+      
+      .description p{
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        line-height: 27px;
+        font-size: 16px;
+        color: #555;
+      }
+    
+
+        .reviews .stars{
+        display: inline-block;
+        list-style: none;
+        padding: 0;}
+        
+        .reviews li{
+          display: inline-block;}
+          
+          .reviews li .fa{
+            color: #f7c01b;
+            font-size: 15px;
+          }
+        
+      
+      
+          .reviews span{
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        margin-left: 5px;
+        color: #555;
+      }
+  
+  .card__footer{
+    padding: 30px 40px;
+    display: flex;
+    flex-flow: row no-wrap;
+    align-items: center;
+    position: relative;}
+    
+    .card__footer::before{
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 40px;
+      width: calc(100% - 40px);
+      height: 3px;
+      background: #115dd8;
+      background: linear-gradient(to right, #115dd8 0%,#115dd8 20%,#ddd 20%,#ddd 100%);
+    }
+    
+     .recommend{
+      flex: 1 0 10px;}
+      
+      .recommend p{
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        color: #555;
+      }
+     
+      .recommend h3{
+        margin: 0;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #115dd8;
+      }
+
+    
+    .action button{
+        cursor: pointer;
+        border: 1px solid #115dd8;
+        padding: 14px 30px;
+        border-radius: 200px;
+        color: #fff;
+        background: #115dd8;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        transition: 200ms;}
+        
+        .action button:hover{
+          background: #fff;
+          color: #115dd8;
+        }
+
+        .wrapper{
+            width: 180px;
+            height: 80px;
+            padding: 10px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .radio-group{
+            position: relative;
+            width: 50px;
+            margin: 5px;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            font-size: 40px;
+        }
+        .radio-group input[type="radio"]{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            z-index: 1;
+            opacity: 0;
+        }
+        .radio-group input[type="radio"] + label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #95a5a6;
+            transform: scale(.8);
+        }
+        .radio-group input[type="radio"]:checked + label{
+            color: #1b9cfc;
+            transform: scale(1.1);
+        }
+
+    .container{
+        width: 360px;
+        border: 2px solid #333;
+        padding: 15px 10px;
+    }
+    .container h2{
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    textarea{
+        height: 20px;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #aaa;
+        background-color: transparent;
+        margin-bottom: 10px;
+        resize: none;
+        outline: none;
+        transition: .5s;
+    }
+    input[type="submit"], button{
+padding: 10px 15px;
+border: none;
+outline: none;
+border-radius: 5px;
+text-transform: uppercase;
+font-weight: bold;
+cursor: pointer;
+}
+input[type="submit"]{
+    color: #fff;
+    background-color: #273c75;
+}
+button{
+    color: #333;
+    background-color: transparent;
+}
+.btnn{
+    display: none;
+}
+       

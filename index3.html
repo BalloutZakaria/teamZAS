@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Designer</title>
+</head>
+<body>
+    <div class="formula">
+   <form>
+    <h1>New design</h1>
+    <div class="separation"></div>
+    <div class="corps-formulaire">
+        <div class="gauche">
+            <div class="groupe">
+                <label>Model Name</label>
+                <input type="text">
+            </div>
+            <div class="groupe">
+                <label>Categorie</label>
+                <div class="select_mate" data-mate-select="active" >
+                    <select name="" onchange="" onclick="return false;" id="">
+                    <option value=""  >Selecion an opcion </option>
+                    <option value="1">Cars</option>
+                    <option value="2" >Tiyara</option>
+                    <option value="3">Ser fhalk</option>
+                    <option value="2" >Tiyara</option>
+                    <option value="2" >Tiyara</option>
+                      </select>
+                    <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                        <path d="M0-.75h24v24H0z" fill="none"/>
+                    </svg></span>
+                    <div class="cont_list_select_mate">
+                      <ul class="cont_select_int">  </ul> 
+                    </div>
+                      </div>
+            </div>
+            <div class="groupe">
+                <label>Price</label>
+                <input type="text" placeholder="100.00">
+            </div>
+        </div>
+        <div class="droite">
+          <div class="groupe">
+          <label>Description</label>
+          <textarea></textarea>
+        </div>
+     </div>
+    </div>
+    <div class="wrapper">
+        <header>Ur design</header>
+        <fieldset action="#">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Browse File to Upload</p>
+        </fieldset>
+        <section class="progress-area">
+            <li class="row">
+                <i class="fas fa-file-alt"></i>
+                <div class="content">
+                    <div class="details">
+                        <span class="name">image_01.png • Uploading</span>
+                        <span class="percent">50%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </li>
+        </section>
+        <section class="uploaded-area">
+            <li class="row">
+                <i class="fas fa-file-alt"></i>
+                <div class="content">
+                    <div class="details">
+                        <span class="name">image_01.png • Uploading</span>
+                        <span class="size">80 KB</span>
+                    </div>
+                </div>
+                <i class="fas fa-check"></i>
+            </li>
+        </section>
+      </div>
+    <div class="pied-formulaire" align="center">
+        <button>Envoyer</button>
+    </div>
+   </form> 
+</div>
+   <script src="script3.js"></script>
+</body>
+</html>

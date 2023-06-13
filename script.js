@@ -3,16 +3,7 @@ document.querySelector('#search-btn').onclick = () => {
     searchForm.classList.toggle('active');
 }
 
-
-
-
-
-
-window.onscroll = () =>{
-    searchForm.classList.remove('active');
-    if(window.scrollY > 80){
-        document.querySelector('.header .header-1').classList.add('active');
-     }else{
-        document.querySelector('.header .header-1').classList.add('active');
-     }
+let subMenu = document.getElementById("subMenu");
+function toggleMenu(){
+    subMenu.classList.toggle("open-menu");
 }
