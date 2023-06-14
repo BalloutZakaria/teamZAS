@@ -110,4 +110,57 @@ window.onload = function(){
     salir_select(selc); 
   }
   
+
   
+
+
+const fieldset = document.querySelector("fieldset"),
+fileInput = fieldset.querySelector(".file-input"),
+progressArea = document.querySelector(".progress-area"),
+uploadedArea = document.querySelector(".uploaded-area");
+
+fieldset.addEventListener("click", ()=>{
+    fileInput.click();
+});
+
+fileInput.onchange = ({target}) =>{
+     let file = targer.files[0];
+     if(file){
+        let fileName = file.name;
+        uploadFile.log.log(fileName);
+     }
+}
+
+function uploadFile(name){
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "php/upload.php");
+    xhr.upload.addEventListener("progress", ({loaded, total}) =>{
+        let fileLoaded = Math.floor((loaded / total) * 100);
+        let fileTotal = Math.floor(total / 1000);
+        let progressHTML = `<li class="row">
+     <i class="fas fa-file-alt"></i>
+        <div class="content">
+            <div class="details">
+                <span class="name">${name} • Uploading</span>
+                <span class="percent">${fileLoaded}%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" style="width: ${fileLoaded}%"></div>
+            </div>
+        </div>
+    </li>`;
+    progressArea.innerHTML = progressHTML;
+        // let uploadedHTML = ` <li class="row">
+       //  <i class="fas fa-file-alt"></i>
+       //   <div class="content">
+         //   <div class="details">
+          //      <span class="name">image_01.png • Uploading</span>
+          //      <span class="size">80 KB</span>
+           // </div>
+        //</div>
+      //  <i class="fas fa-check"></i>
+   // </li>`;
+    });
+    let formData = new FormData(fieldset);
+    xhr.send(formData);
+}
