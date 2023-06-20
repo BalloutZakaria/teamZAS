@@ -102,7 +102,7 @@ window.onload = function(){
   li_s[i].className = '';
   };
   li_s[indx].className = 'active';
-  
+    
   };
   select_optiones[indx].selected = true;
     select_.selectedIndex = indx;
