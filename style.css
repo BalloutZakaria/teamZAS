@@ -219,7 +219,7 @@ cursor: pointer;
 
 
 
-ul {
+.ctg ul {
     padding: 0;
     display: inline-grid;
     grid-auto-flow: column;
@@ -227,28 +227,29 @@ ul {
     grid-template-columns: auto repeat(6, calc((var(--active, 0)*130px) + 10px));
     transition: grid-template-columns 0.35s var(--ease-elastic-1);
   }
-  main {
+  .ctg main {
     width: 66ch;
   }
-  li {
+  .ctg li {
     display: grid;
     justify-content: end;
     z-index: calc(var(--count) - var(--index));
   }
-  nav {
+  .ctg nav {
     position: relative;
   }
-  nav > button {
+  .ctg nav > button {
     position: absolute;
     left: 0;
     background: red;
-    z-index: var(--count);}
-    .ctg a {
+    z-index: var(--count);
+ }
+       .ctg a {
         background: hsla(0, 3%, 16%, 0.18);
         display: inline-block;
         padding: var(--size-4) var(--size-8);
         border-radius: var(--radius-5);
-        margin-left: 100px;
+        margin-left: 85px;
         position: relative;
         top:100px;
         color: var(--gray-0);
@@ -258,7 +259,7 @@ ul {
         transition: color 0.2s, background 0.2s; 
        
       }
-      .ctg a:visited {
+       a:visited {
         color: var(--gray-0);
       }  
       .ctg span {
@@ -266,7 +267,7 @@ ul {
         grid-auto-flow: column;
         font-size: 1.4rem;
       }
-      li:is(
+      .ctg li:is(
         :nth-of-type(2),
         :nth-of-type(3),
         :nth-of-type(4),
@@ -276,21 +277,21 @@ ul {
       ) span {
         opacity: var(--active, 0);
       }
-      li:is(
+       li:is(
         :nth-of-type(2),
         :nth-of-type(3),
         :nth-of-type(4),
         :nth-of-type(5),
         :nth-of-type(6),
         :nth-of-type(7)
-      ) a:is(:hover, :focus) {
+      )  a:is(:hover, :focus) {
         background: var(--gray-0);
         color: var(--gray-12);
       }
-      a:focus-visible {
+      .ctg a:focus-visible {
         outline-color: transparent;
       }
-      ul:is(:focus-within, :hover) {
+      .ctg ul:is(:focus-within, :hover) {
         --active: 1;
       }
 .products{
@@ -386,10 +387,73 @@ cursor: pointer;
 
 
 
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
 
+.cf:after {
+    clear: both;
+}
 
- 
+.cf {
+    zoom: 1;
+}
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
 
+.col:first-of-type {
+  margin-left: 0;
+}
+
+.container{
+  width: 100%;
+  max-width: 940px;
+  margin: 50px auto;
+  position: relative;
+  text-align: center;
+}
+.pagination{
+    padding: 30px 0;
+    width: 100%;
+  }
+  
+  .pagination ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .pagination a{
+    display: inline-block;
+    padding: 10px 18px;
+    color: #222;
+  }
+  .pagination a{
+  text-decoration: none;
+  }
+
+ .pagination p, li, a{
+  font-size: 14px;
+ }
+  
+.p1 a{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  text-align: center;
+}
+
+.p1 a.is-active{
+  background-color: var(--vintage);
+  border-radius: 100%;
+  color: #fff;
+}
 
 
 
